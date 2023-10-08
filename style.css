@@ -1,0 +1,188 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+/* :root{
+    --text-color: #575757;
+} */
+
+html {
+  font-size: 16px;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400;
+}
+
+ol,
+ul,
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 100px;
+  background-color: #d4d4d4;
+}
+
+.wrap {
+  max-width: 1024px;
+  width: 95%;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 100%;
+}
+
+/* @media screen and (max-width: 992px) {
+    .wrap {
+        width: 768px;
+        max-width: 100%;
+    }
+} */
+
+.header-logo {
+  letter-spacing: 4px;
+}
+
+.header-nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+header a:hover {
+  cursor: pointer;
+  color: black;
+  transition: all 0.3s ease;
+  text-decoration: underline;
+}
+
+main {
+  margin-top: 100px;
+}
+
+.section {
+  height: auto;
+  min-height: 600px;
+  padding: 60px 0;
+}
+
+h2.title {
+  font-size: 32px;
+  text-align: center;
+  color: var(--text-color);
+  text-decoration: underline;
+}
+
+.section.hot-products {
+  background-color: #fff;
+}
+
+.section.new-products {
+  background-color: orange;
+}
+/* Product: begin */
+.products-list {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    column-gap: 24px;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    row-gap: 48px;
+}
+
+.product-item {
+    /* min-width: 240px;
+  max-width: 280px; */
+    width: calc(100% / 4);
+    height: auto;
+    border: 1px solid #ccc;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    padding: 12px;
+    border-radius: 8px;
+    border: none;
+}
+
+.product-img {
+    width: 100%;
+    margin: 0 auto;
+}
+
+.product-content {
+    margin: 0 auto;
+    margin-top: 24px;
+}
+
+.product-content>h3 {
+    font-size: 16px;
+    text-align: center;
+}
+
+.product-content>.product-price {
+    color: red;
+    text-align: center;
+}
+
+/* .product-content>.btn-addToCard {
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    padding: 12px 24px;
+    text-align: center;
+    background-color: rgb(0, 255, 255);
+    transition: background-color 0.5s ease;
+    width: 100%;
+} */
+
+/* .product-content>.btn-addToCard:hover {
+    color: #fff;
+    cursor: pointer;
+    background-color: rgb(49, 154, 154);
+} */
+
+/* Product: end */
+
+/* #banner-slide {
+  height: 200px;
+  width: 100%;
+  background-color: #ffffff;
+} */
+
+footer {
+  width: 100%;
+  height: 150px;
+  background-color: black;
+}
+
+/* .btn-ontop {
+    z-index: 1000;
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+    border: none;
+    background-color: transparent;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
+        rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
+        rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+    border-radius: 50%;
+} */
+
+.btn {
+    cursor: pointer;
+}
+
+/* .btn.btn-ontop>i.icon-ontop {
+    font-size: 60px;
+    font-weight: 700;
+} */
