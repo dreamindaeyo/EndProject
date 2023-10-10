@@ -9,7 +9,7 @@
 } */
 
 html {
-  font-size: 16px;
+  font-size: 14px;
   font-family: "Open Sans", sans-serif;
   font-weight: 400;
 }
@@ -31,11 +31,22 @@ header {
   right: 0;
   height: 50px;
   background-color: #d4d4d4;
+  
 }
 header > nav > ul {
   display: flex;
   align-items: center;
   justify-content: space-evenly;
+  padding: 15px;
+}
+nav{
+  width: 1140px;
+  margin: 0 0 0 50px;
+}
+.tab {
+  color: black;
+  font-size: 16px;
+  font-weight: 700;
 }
 .wrap {
   max-width: 1024px;
@@ -48,7 +59,7 @@ header > nav > ul {
 }
 header a:hover {
   cursor: pointer;
-  color: black;
+  color: #E68938;
   transition: all 0.3s ease;
   text-decoration: underline;
 }
@@ -61,9 +72,7 @@ header a:hover {
   margin-top: 50px;
 }
 
-main {
-  margin-top: 100px;
-}
+main {}
 
 .section {
   height: auto;
@@ -113,10 +122,10 @@ h2.title {
   width: 100%;
   margin: 0 auto;
 }
-.product-img > img{
-    width: 220px;
-    height: 220px;
-    justify-content: center;
+.product-img > img {
+  width: 220px;
+  height: 220px;
+  justify-content: center;
 }
 .product-content {
   margin: 0 auto;
@@ -153,10 +162,43 @@ h2.title {
 
 footer {
   width: 100%;
-  height: 150px;
+  /* height: 250px; */
   background-color: black;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  display: block;
+  color: white;
+  font-size: 12px;
 }
-
+.container {
+  margin-right: auto;
+  margin-left: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+  font-size: 100%;
+  /* vertical-align: baseline; */
+  display: block;
+}
+.row1 {
+  /* margin-left: -15px;
+  margin-right: -15px; */
+  font-size: 100%;
+  vertical-align: baseline;
+  display: flex;
+  justify-content: space-around;
+}
+.row2 {
+  padding-left: 20px;
+  font-size: 100%;
+  /* vertical-align: baseline; */
+}
+#icon {
+  width: 30px;
+  height: auto;
+}
+.links{
+  color: white;
+}
 /* .btn-ontop {
     z-index: 1000;
     position: fixed;
