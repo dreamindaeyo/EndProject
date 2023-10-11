@@ -14,9 +14,7 @@ html {
   font-weight: 400;
 }
 
-ol,
-ul,
-li {
+ol, ul, li{
   list-style: none;
 }
 
@@ -30,8 +28,9 @@ header {
   left: 0;
   right: 0;
   height: 50px;
-  background-color: #d4d4d4;
-  
+  background-color: rgba(255, 255, 255, 0.8);
+  border: 1px solid #00000026;
+  z-index: 100;
 }
 header > nav > ul {
   display: flex;
@@ -39,7 +38,7 @@ header > nav > ul {
   justify-content: space-evenly;
   padding: 15px;
 }
-nav{
+nav {
   width: 1140px;
   margin: 0 0 0 50px;
 }
@@ -59,7 +58,7 @@ nav{
 }
 header a:hover {
   cursor: pointer;
-  color: #E68938;
+  color: #e68938;
   transition: all 0.3s ease;
   text-decoration: underline;
 }
@@ -68,11 +67,13 @@ header a:hover {
 } */
 
 #banner {
-  height: 200px;
   margin-top: 50px;
 }
 
-main {}
+main {
+  width: 100vw;
+  margin: 0 auto;
+}
 
 .section {
   height: auto;
@@ -196,7 +197,11 @@ footer {
   width: 30px;
   height: auto;
 }
-.links{
+.tch_social_links {
+  display: flex;
+  padding: 0;
+}
+.links {
   color: white;
 }
 /* .btn-ontop {
@@ -220,3 +225,7 @@ footer {
     font-size: 60px;
     font-weight: 700;
 } */
+
+.footer_linklists{
+  padding: 0;
+}

@@ -26,7 +26,9 @@ header {
   left: 0;
   right: 0;
   height: 50px;
-  background-color: #d4d4d4;
+  background-color: rgba(255, 255, 255, 0.8);
+    border: 1px solid #00000026;
+    z-index: 100;
 }
 
 header > nav > ul {
@@ -51,6 +53,9 @@ header a:hover {
   text-decoration: underline;
 }
 main {
+  width: 100vw;
+    height: 200vh;
+    margin: 0 auto;
 }
 footer {
     width: 100%;
