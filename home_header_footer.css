@@ -1,0 +1,110 @@
+@import "format_root.css";
+/* html {
+  font-size: 14px;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400;
+} */
+
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 100;
+  height: 50px;
+  background-color: var(--background-header);
+  border: 1px solid #00000026;
+}
+header > nav > ul {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  padding: 15px;
+}
+nav {
+  width: 1140px;
+  margin: 0 0 0 50px;
+}
+.tab {
+  color: var(--text-black);
+  font-size: var(--size-large);
+  font-weight: var(--weight-thick);
+}
+.wrap {
+  max-width: 1024px;
+  width: 95%;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 100%;
+}
+header a:hover {
+  cursor: pointer;
+  color: var(--text-orange);
+  transition: all 0.3s ease;
+  text-decoration: underline;
+}
+
+footer {
+  width: 100%;
+  background-color: var(--background-footer);
+  padding-top: 20px;
+  padding-bottom: 20px;
+  display: block;
+  color: var(--text-white);
+  font-size: var(--size-small);
+}
+.footer_linklists {
+  padding: 0;
+}
+.container {
+  margin-right: auto;
+  margin-left: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+  font-size: 100%;
+  display: block;
+}
+.row1 {
+  font-size: 100%;
+  vertical-align: baseline;
+  display: flex;
+  justify-content: space-around;
+}
+.row2 {
+  padding-left: 20px;
+  font-size: 100%;
+}
+#icon {
+  width: 30px;
+  height: auto;
+}
+.tch_social_links {
+  display: flex;
+  padding: 0;
+}
+.links {
+  color: var(--text-white);
+}
+/* .btn-ontop {
+    z-index: 1000;
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+    border: none;
+    background-color: transparent;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
+        rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
+        rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+    border-radius: 50%;
+} */
+
+/* .btn {
+  cursor: pointer;
+} */
+/* 
+.btn.btn-ontop>i.icon-ontop {
+    font-size: 60px;
+    font-weight: 700;
+} */
