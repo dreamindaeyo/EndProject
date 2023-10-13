@@ -1,0 +1,40 @@
+:root {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+
+  /* font-family */
+  font-family: "Open Sans", sans-serif;
+
+  /* font-weight */
+  --weight-thin: 100;
+  --weight-medium: 400;
+  --weight-thick: 700;
+  /* font-size */
+  --size-small: 12px; /* nội dung footer*/
+  --size-medium: 14px; /* những thứ còn lại */
+  --size-large: 16px; /*Title nhỏ hơn*/
+  --size-xlarge: 28px; /* Title */
+  /* text-color */
+  --text-white: #fff;
+  --text-black: #000;
+  --text-orange: #e57905;
+  --text-gray: #00000099;
+  /* background-color */
+  --background-footer: #000000d9;
+  --background-main-white: #fff;
+--background-main-orange:#e57905;
+  --background-header: rgba(255, 255, 255, 0.8);
+  /*product box shadow */
+  --box-shadow-color: rgba(0, 0, 0, 0.24);
+}
+
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans&display=swap");
+ol,
+ul,
+li {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+}
