@@ -1,6 +1,7 @@
 @import "format_root.css";
 
 #banner {
+  width: 100vw;
   margin-top: 50px;
 }
 

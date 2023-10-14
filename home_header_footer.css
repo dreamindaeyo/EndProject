@@ -1,10 +1,4 @@
 @import "format_root.css";
-/* html {
-  font-size: 14px;
-  font-family: "Open Sans", sans-serif;
-  font-weight: 400;
-} */
-
 header {
   position: fixed;
   top: 0;
@@ -47,34 +41,37 @@ header a:hover {
 }
 
 footer {
-  width: 100%;
+  width: 100vw;
   background-color: var(--background-footer);
+  color: var(--text-white);
+  font-size: var(--size-small);
   padding-top: 20px;
   padding-bottom: 20px;
   display: block;
-  color: var(--text-white);
-  font-size: var(--size-small);
+}
+.container {
+  width: 100%;
+  font-size: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+  display: block;
 }
 .footer_linklists {
   padding: 0;
 }
-.container {
-  margin-right: auto;
-  margin-left: auto;
-  padding-left: 15px;
-  padding-right: 15px;
-  font-size: 100%;
-  display: block;
-}
+
 .row1 {
   font-size: 100%;
-  vertical-align: baseline;
   display: flex;
   justify-content: space-around;
+  
 }
 .row2 {
-  padding-left: 20px;
   font-size: 100%;
+  padding-left: 30px;
+ 
 }
 #icon {
   width: 30px;
@@ -87,6 +84,7 @@ footer {
 .links {
   color: var(--text-white);
 }
+
 /* .btn-ontop {
     z-index: 1000;
     position: fixed;
