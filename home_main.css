@@ -1,5 +1,4 @@
 @import "format_root.css";
-
 #banner {
   width: 100vw;
   margin-top: 50px;
@@ -34,7 +33,7 @@ h2.title {
 }
 
 .product-item {
-   width: calc(100% / 4);
+  width: calc(100% / 4);
   height: auto;
   border: 1px solid var(--text-white);
   box-shadow: var(--box-shadow-color) 0px 3px 8px;
@@ -84,5 +83,3 @@ h2.title {
     cursor: pointer;
     background-color: rgb(49, 154, 154);
 } */
-
-
