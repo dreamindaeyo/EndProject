@@ -23,7 +23,7 @@
   /* background-color */
   --background-footer: #000000d9;
   --background-main-white: #fff;
---background-main-orange:#e57905;
+  --background-main-orange: #e57905;
   --background-header: rgba(255, 255, 255, 0.8);
   /*product box shadow */
   --box-shadow-color: rgba(0, 0, 0, 0.24);
@@ -37,7 +37,7 @@ li {
 }
 a {
   text-decoration: none;
-      background-color: transparent;
+  background-color: transparent;
 }
 body {
   margin: 0;
