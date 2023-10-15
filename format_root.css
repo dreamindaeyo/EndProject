@@ -37,6 +37,7 @@ li {
 }
 a {
   text-decoration: none;
+      background-color: transparent;
 }
 body {
   margin: 0;
