@@ -43,7 +43,7 @@ main {
 .section_heading {
   float: none;
   display: inline-block;
-  margin-bottom: 24px;
+  margin-bottom: 32px;
   position: relative;
   margin-top: 0;
   font-size: var(--size-xlarge);
