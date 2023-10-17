@@ -1,0 +1,44 @@
+@import "../format_root.css";
+html .btn {
+width: 500px;
+height: 50px;
+font-size: var(--size-large);
+font-weight: var(--weight-thick)
+}
+
+
+html .btn-primary {
+    --bs-btn-color: #fff;
+    --bs-btn-bg: var(--background-main-orange);
+    --bs-btn-border-color: var(--background-main-orange);
+    --bs-btn-hover-color: #fff;
+    --bs-btn-hover-bg: var(--background-main-orange);
+    --bs-btn-hover-border-color:var(--background-main-orange);
+    --bs-btn-focus-shadow-rgb: 49,132,253;
+    --bs-btn-active-color: #fff;
+    --bs-btn-active-bg: var(--background-main-orange);
+    --bs-btn-active-border-color: var(--background-main-orange);
+    --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+    --bs-btn-disabled-color: #fff;
+    --bs-btn-disabled-bg: var(--background-main-orange);
+    --bs-btn-disabled-border-color: var(--background-main-orange);
+}
+
+.detail-title{
+    font-size: var(--size-xlarge);
+    font-weight: var(--weight-thick);
+    margin: 0px;
+}
+.detail-price{
+    color: var(--background-main-orange);
+    font-size: var(--size-xlarge);
+    font-weight: var(--weight-thick);
+}
+html .card-img-top {
+    width: 88%;
+}
+hr {
+    border-top: 1px solid grey !important;
+margin: 30px 240px 10px 310px !important;
+
+}
