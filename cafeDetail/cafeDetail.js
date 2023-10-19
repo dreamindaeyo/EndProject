@@ -54,7 +54,7 @@ const productDetail = cafes.find(x => x.id == window.location.search.slice(4))
 const elDetail = document.querySelector('.main-detail')
 elDetail.querySelector('.detail-title').innerText = productDetail.name
 
-=======
+
 // let cafe = [
 //    { 
 //     id: 1,
