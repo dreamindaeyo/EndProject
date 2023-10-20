@@ -17,8 +17,6 @@ main {
   font-size: 100%;
   display: grid;
   grid-template-columns: 250px 30px auto;
-  /* flex-direction: row;
-  justify-content:space-between; */
 }
 .collection_menu_sidebar {
   height: 100%;
