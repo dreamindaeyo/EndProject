@@ -38,7 +38,6 @@ header a:hover {
   cursor: pointer;
   color: var(--text-orange);
   transition: all 0.3s ease;
-  text-decoration: underline;
 }
 
 footer {
@@ -62,7 +61,6 @@ footer {
 .footer_linklists {
   padding: 0;
 }
-
 .row1 {
   font-size: 100%;
   display: flex;

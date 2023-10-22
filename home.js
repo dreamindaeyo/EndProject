@@ -124,6 +124,6 @@ product.forEach((x, i) => {
   x.querySelector(".price_product_item").innerHTML = pros[i].price;
 });
 
-function goDetail(event) {
-  window.location = `./cafeDetail/cafeDetail01.html?id=${event.id}`;
+function goDetail(event){
+     window.location = `./cafeDetail/cafeDetail01.html?id=${event.id}`;
 }

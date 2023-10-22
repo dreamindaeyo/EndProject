@@ -159,5 +159,6 @@ a {
     border-left: 2px solid var(--text-gray);
     width: 5px;    
     border-top: none;
-    padding: none; 
+    padding: none;
+    margin: 0;
 }

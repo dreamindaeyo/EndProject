@@ -99,12 +99,15 @@ a {
 }
 .menu_item .menu_item_info h3 {
   margin-top: 0;
-  margin-bottom: 4px;
+  margin-bottom: 0;
   font-weight: var(--weight-thick);
   color: var(--text-black);
   font-size: var(--size-large);
   overflow: hidden;
   text-overflow: ellipsis;
+}
+.menu_item .menu_item_info h3 p {
+  margin-bottom: 5px ;
 }
 .menu_item .price_product_item {
   font-size: var(--size-medium);
