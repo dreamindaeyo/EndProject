@@ -1,7 +1,6 @@
 @import "format_root.css";
 main {
   width: 100vw;
-  margin: 0 auto;
 }
 .article {
   top: 50px;
