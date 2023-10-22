@@ -98,30 +98,74 @@ let proteas = [
 },
 {
     id: "teadrink04",
-    name: "",
-    price: ".000 đ",
-    img: "",
-    about: "",
+    name: "Hồng Trà Sữa Trân Châu",
+    price: "55.000 đ",
+    img: "https://product.hstatic.net/1000075078/product/hong-tra-sua-tran-chau_326977_9fa9895e23bc46818ec7800cfd35b060_large.jpg",
+    about: "Thêm chút ngọt ngào cho ngày mới với hồng trà nguyên lá, sữa thơm ngậy được cân chỉnh với tỉ lệ hoàn hảo, cùng trân châu trắng dai giòn có sẵn để bạn tận hưởng từng ngụm trà sữa ngọt ngào thơm ngậy thiệt đã.",
 },
 {
     id: "teadrink05",
-    name: "",
-    price: ".000 đ",
-    img: "",
-    about: "",
+    name: "Trà sữa Oolong Nướng Trân Châu",
+    price: "55.000 đ",
+    img: "https://product.hstatic.net/1000075078/product/1669736877_tra-sua-oolong-nuong-tran-chau_ee56caa33ce3432e99571c302f0d6498_large.png",
+    about: "Hương vị chân ái đúng gu đậm đà với trà oolong được “sao” (nướng) lâu hơn cho hương vị đậm đà, hòa quyện với sữa thơm béo mang đến cảm giác mát lạnh, lưu luyến vị trà sữa đậm đà nơi vòm họng.",
 },
 {
     id: "teadrink06",
-    name: "",
-    price: ".000 đ",
-    img: "",
-    about: "",
+    name: "Trà Sữa Oolong Nướng Trân Châu Chai Fresh 500ML",
+    price: "95.000 đ",
+    img: "https://product.hstatic.net/1000075078/product/bottle_oolong_285082_a5c6a23d73924b96b86d5e1e52e87aa0_large.jpg",
+    about: "Phiên bản chai fresh 500ml mới, The Coffee House tin rằng với diện mạo mới: tiện lợi và phù hợp với bình thường mới này, các tín đồ trà sữa sẽ được thưởng thức hương vị đậm đà, hòa quyện với sữa thơm béo mang đến cảm giác mát lạnh ở bất cứ nơi đâu. *Sản phẩm dùng ngon nhất trong ngày. *Sản phẩm mặc định mức đường và không đá.",
 },
 ];
 
+let proclouds = [
+  {
+    id: "clouddrink01",
+    name: "CloudTea Oolong Nướng Kem Dừa",
+    price: "55.000 đ",
+    img: "https://product.hstatic.net/1000075078/product/1675740758_cloudtea-oolong-nuong-kem-cheese-min_3a4d54f04afc499293ec9bb29cea471c_large.png",
+    about: "",
+}, 
+{
+    id: "clouddrink02",
+    name: "CloudTea Oolong Nướng Kem Cheese",
+    price: "55.000 đ",
+    img: "https://product.hstatic.net/1000075078/product/1675355728_cheese_86262dc051db4cbaa02e2d80d98a2aad_large.jpg",
+    about: "",
+}, 
+{
+    id: "clouddrink03",
+    name: "CloudTea Oolong Nướng Kem Dừa Đá Xay",
+    price: "55.000 đ",
+    img: "https://product.hstatic.net/1000075078/product/1675329651_bg-cloudtea-daxay_35decc79016c4a23948f7c5b87537db4_large.jpg",
+    about: "",
+}, 
+{
+    id: "clouddrink04",
+    name: "CloudFee Hạnh Nhân Nướng",
+    price: "49.000 đ",
+    img: "https://product.hstatic.net/1000075078/product/1675357918_cloudfee-hanh-nhan-nuong-min_5878cf79201a4742a022b038076b3c68_large.png",
+    about: "",
+}, 
+{
+    id: "clouddrink05",
+    name: "CloudFee Caramel",
+    price: "49.000 đ",
+    img: "https://product.hstatic.net/1000075078/product/1675329314_bg-cloudfee-caramel_ec7f6224a90a4d07a6611ae730eb745c_large.jpg",
+    about: "",
+}, 
+{
+    id: "clouddrink06",
+    name: "CloudFee Hà Nội",
+    price: "49.000 đ",
+    img: "https://product.hstatic.net/1000075078/product/1675329376_bg-cloudfee-classic_f74e0d642649468c8ee4f58b9ff40426_large.jpg",
+    about: "",
+},  
+]
 const cafeproduct = document.querySelectorAll(".cafedrink");
 cafeproduct.forEach((x,i) => {
-    x.querySelector("img").setAttribute("scr", procafes[i].img);
+    x.querySelector("img").setAttribute("src", procafes[i].img);
     x.querySelector("img").setAttribute("alt", procafes[i].name);
     x.querySelector("img").setAttribute("id", procafes[i].id);
     x.querySelector(".item_name").innerHTML = procafes[i].name;
@@ -130,9 +174,17 @@ cafeproduct.forEach((x,i) => {
 
 const teaproduct = document.querySelectorAll(".teadrink");
 teaproduct.forEach((x,i) => {
-    x.querySelector("img").setAttribute("scr", proteas[i].img);
+    x.querySelector("img").setAttribute("src", proteas[i].img);
     x.querySelector("img").setAttribute("alt", proteas[i].name);
     x.querySelector("img").setAttribute("id", proteas[i].id);
     x.querySelector(".item_name").innerHTML = proteas[i].name;
     x.querySelector(".price_product_item").innerHTML = proteas[i].price;
+})
+const cloudproduct = document.querySelectorAll(".clouddrink");
+cloudproduct.forEach((x,i) => {
+    x.querySelector("img").setAttribute("src", proclouds[i].img);
+    x.querySelector("img").setAttribute("alt", proclouds[i].name);
+    x.querySelector("img").setAttribute("id", proclouds[i].id);
+    x.querySelector(".item_name").innerHTML = proclouds[i].name;
+    x.querySelector(".price_product_item").innerHTML = proclouds[i].price;
 })

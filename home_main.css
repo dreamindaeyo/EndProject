@@ -77,7 +77,7 @@ a {
   transition: 0.5s;
   background-color: transparent;
 }
-.menu_item .menu_item_image > a > img {
+.menu_item .menu_item_image > img {
   position: absolute;
   top: 0;
   left: 0;
