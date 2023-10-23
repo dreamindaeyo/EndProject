@@ -147,3 +147,7 @@ footer {
   background-color: transparent;
   color: var(--text-orange);
 }
+.active {
+  color: var(--text-orange) !important;
+  font-weight: var(--weight-thick);
+}
