@@ -106,19 +106,19 @@ footer {
   padding: 0;
   border: #ef9b15;
   background-color: #ef9b15;
-    border-radius: 50%;
+  border-radius: 50%;
 }
-#hotline > img{
+#hotline > img {
   width: 35px;
   height: 35px;
-    border-radius: 50%;
+  border-radius: 50%;
 }
-.popup{
+.popup {
   display: none;
   position: fixed;
   left: 50%;
   margin-left: -175px;
-  top:50%;
+  top: 50%;
   margin-top: -55px;
   padding: 15px;
   width: 350px;
@@ -132,7 +132,8 @@ footer {
   text-align: center;
   font-size: 18px;
 }
-#cancel, #call{
+#cancel,
+#call {
   color: var(--text-white);
   border: 1px solid var(--text-orange);
   border-radius: 4px;
@@ -143,7 +144,8 @@ footer {
   font-weight: var(--weight-medium);
   font-size: var(--size-large);
 }
-#cancel:hover, #call:hover{
+#cancel:hover,
+#call:hover {
   background-color: transparent;
   color: var(--text-orange);
 }
