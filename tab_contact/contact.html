@@ -59,7 +59,8 @@
               name="name"
               id="name"
               placeholder="Tên của bạn..."
-              required
+              autofocus
+              onkeyup="e()"
             /><br />
             <label for="cellphone">Số điện thoại</label><br />
             <input
@@ -67,7 +68,7 @@
               name="cellphone"
               id="cellphone"
               placeholder="Số điện thoại..."
-              required
+              onkeyup="e()"
             /><br />
             <label for="email">Email</label><br />
             <input
@@ -75,7 +76,7 @@
               name="email"
               id="email"
               placeholder="Email..."
-              required
+              onkeyup="e()"
             /><br />
             <label for="subject">Ý kiến góp ý</label><br />
             <input
@@ -84,12 +85,17 @@
               name="subject"
               style="height: 200px"
               placeholder=""
-              required
+              onkeyup="e()"              
             />
-            <br />
-
-            <input id="result"  type="submit" value="Gửi" />
+            <br />           
           </form>
+          <button id="result">Gửi</button>
+
+          <div id="answer">
+          <p>Cảm ơn ý kiến của bạn.</p>
+          <p>Chúng tôi sẽ phản hồi ngay sau khi nhận được thông tin này.</p>
+          <a href="/home.html">Trở về trang chủ</a>
+          </div>
         </div>
       </div>
     </main>
@@ -223,6 +229,7 @@
       integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
       crossorigin="anonymous"
     ></script>
-    <script type="module" src="/tab_contact/contact.js"></script>
+    <script src="/tab_contact/contact.js"></script>
+    <script src="/home.js"></script>
   </body>
 </html>

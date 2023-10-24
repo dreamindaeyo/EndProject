@@ -21,10 +21,10 @@ input[type="number"] {
   margin-bottom: 16px;
   resize: vertical;
 }
-input[type="submit"] {
+#result{
   background-color: var(--background-main-orange);
   color: var(--text-white);
-  padding: 10px;
+  padding: auto;
   border: 1px solid var(--background-main-orange);
   border-radius: 4px;
   cursor: pointer;
@@ -33,7 +33,7 @@ input[type="submit"] {
   font-size: var(--size-large);
   font-weight: var(--weight-thick);
 }
-input[type="submit"]:hover {
+#result:hover {
   background-color: transparent;
   color: var(--text-orange);
 }
@@ -51,4 +51,33 @@ label {
 h2 {
   margin-bottom: 20px;
 }
-
+#answer{
+  margin-top: 20px;
+  display: none;
+  position: fixed;
+  left: 50%;
+    margin-left: -245px;
+    top: 50%;
+    margin-top: -75px;
+    padding: 15px;
+      width: 500px;
+      height: auto;
+      background-color:papayawhip;
+        border: 2px solid var(--text-orange);
+        border-radius: 16px;
+        z-index: 120;
+        color: var(--text-orange);
+          font-weight: var(--weight-thick);
+          text-align: center;
+          font-size: var(--size-medium);
+          font-style: italic;
+}
+#answer>a {
+  font-style: italic;
+  text-decoration: underline; 
+  color: var(--text-orange);
+  font-weight: var(--weight-medium);
+}
+#answer>a:hover{
+  color:firebrick;
+}
