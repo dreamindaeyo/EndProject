@@ -1,17 +1,4 @@
 @import "../format_root.css";
-html .btn {
-  width: 500px;
-  height: 50px;
-  font-size: var(--size-large);
-  font-weight: var(--weight-thick);
-}
-.btn:hover{
-background-color: transparent;
-color: var(--text-orange);
-}
-.btn img{
-    margin-right: 5px;
-}
 
 html .btn-primary {
   --bs-btn-color: #fff;
@@ -30,6 +17,23 @@ html .btn-primary {
   --bs-btn-disabled-border-color: var(--background-main-orange);
 }
 
+html .btn {
+  width: 500px;
+  height: 50px;
+  font-size: var(--size-large);
+  font-weight: var(--weight-thick);
+}
+
+.btn:hover {
+  background-color: transparent;
+}
+.btn:hover > a, img {
+  color: #e57905;
+}
+
+.btn img {
+  margin-right: 5px;
+}
 .detail-name {
   font-size: var(--size-xlarge);
   font-weight: var(--weight-thick);

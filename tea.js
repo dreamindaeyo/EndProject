@@ -4,6 +4,7 @@ function goDetail(event) {
 let teas = [
   {
     id: "tea01",
+    type: 2,
     name: "Trà Vị Đào Tearoma 14x14g",
     price: "32.000 đ",
     img: "https://product.hstatic.net/1000075078/product/1669706771_bg-tradao-min_0eb7a1ea0cd642c2b6885970f85e4938_large.jpg",
@@ -12,6 +13,7 @@ let teas = [
   },
   {
     id: "tea02",
+    type: 2,
     name: "Trà Sữa Trân Châu Tearoma 250g",
     price: "38.000 đ",
     img: "https://product.hstatic.net/1000075078/product/1669880647_bg-trasua-min_ab66217f476e4b3295f8ad1c9e471f17_large.jpg",
@@ -20,6 +22,7 @@ let teas = [
   },
   {
     id: "tea03",
+    type: 2,
     name: "Trà Vị Tắc Mật Ong Tearoma 14x14g",
     price: "32.000 đ",
     img: "https://product.hstatic.net/1000075078/product/1669706748_bg-tratatmatong-min_f2459a58cd724c1a91155a90d5481765_large.jpg",
@@ -28,6 +31,7 @@ let teas = [
   },
   {
     id: "tea04",
+    type: 2,
     name: "Trà Oolong Túi Lọc Tearoma 20x2G",
     price: "28.000 đ",
     img: "https://product.hstatic.net/1000075078/product/1639646968_tra-oolong-tui-loc-tearoma-20x2gr_6fcb0e4f8f654fd79ca2db0903760652_large.jpg",
@@ -36,6 +40,7 @@ let teas = [
   },
   {
     id: "tea05",
+    type: 2,
     name: "Trà Lài Túi Lọc Tearoma 20x2G",
     price: "28.000 đ",
     img: "https://product.hstatic.net/1000075078/product/1639647075_tra-lai-tui-loc-tearoma-20x2gr_7226dd7a930c48a1830463edfb393481_large.jpg",
@@ -44,6 +49,7 @@ let teas = [
   },
   {
     id: "tea06",
+    type: 2,
     name: "Trà Sen Túi Lọc Tearoma 20x2G",
     price: "28.000 đ",
     img: "https://product.hstatic.net/1000075078/product/1639648068_tra-sen-tui-loc-tearoma-20x2gr_6bfc6c11b6a64c6b8a29303ae53f562c_large.jpg",
@@ -52,6 +58,7 @@ let teas = [
   },
   {
     id: "tea07",
+    type: 2,
     name: "Trà Đào Túi Lọc Tearoma 20x2G",
     price: "28.000 đ",
     img: "https://product.hstatic.net/1000075078/product/1639646846_tra-dao-tui-loc-tearoma-20x2gr_51dba126e55c45b9a05b7dcbc706edaa_large.jpg",
@@ -60,6 +67,7 @@ let teas = [
   },
   {
     id: "tea08",
+    type: 2,
     name: "Giftset Trà Tearoma",
     price: "166.000 đ",
     img: "https://product.hstatic.net/1000075078/product/1641440575_gift-set-tearoma-1_e793b698ba19496683d9e213b77a82c8_large.jpeg",
