@@ -1,0 +1,79 @@
+@import "format_root.css";
+main {
+    width: 100vw;
+    margin: 0 auto;
+}
+#article{
+    top: 50px;
+    position: relative;
+}
+.article_wrap{
+    width: 100%;
+    position: relative;    
+    padding-left: 15px;
+    padding-right: 15px;
+    background: var(--background-main-white);
+}
+.article_content_wrap{
+    width: 70%;
+    margin: 0 auto 70px auto;
+    padding: 20px 0;
+}
+.article_content_wrap h1{
+    font-size: 34px;
+    float: none;
+    color: var(--text-black);
+    display: inline-block;
+}
+.heading{
+    position: relative;
+    margin-bottom: 20px;
+    margin-top: 0;
+}
+h1{
+    font-weight: var(--weight-thick);
+}
+.article_content{
+    position: relative;
+
+}
+tr{
+    display: table-row;
+    border-collapse: collapse;
+
+}
+td{
+    vertical-align: middle;
+    padding: 15px;
+    border: 1px solid var(--text-orange);
+    display: table-cell;
+}
+td> h2{
+    float: none;
+    color: var(--text-black);
+    display: inline-block;
+    font-weight: var(--weight-thick);
+    line-height: 1.4;
+}
+h2> span{
+    font-size: 32px;
+}
+tr > td > ul{
+    padding-left: 15px;
+    padding-right: 15px;
+    list-style: none;
+    margin-top: 0px;
+    margin-bottom: 10px;
+}
+tr >td >ul >li{
+    list-style: none;
+    padding-left: 10px;
+}
+tr > td > ul >li >p{
+    margin-bottom: 10px;
+    line-height: 24px;
+    padding-left: 15px;
+}
+tr >td > p{
+    padding-left: 40px;
+}
