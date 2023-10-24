@@ -66,3 +66,7 @@ main hr {
 .card-body{
   padding-left: 0;
 }
+button a{
+  text-decoration: none;
+  color: var(--text-white);
+}
