@@ -1,4 +1,3 @@
-
 let cafes = [
   {
     id: "cafe01",
@@ -97,60 +96,58 @@ let cafes = [
       "Với thiết kế lon cao trẻ trung, hiện đại và tiện lợi, Cà phê sữa đá lon thơm ngon đậm vị của The Coffee House sẽ đồng hành cùng nhịp sống sôi nổi của tuổi trẻ và giúp bạn có được một ngày làm việc đầy hứng khởi.",
   },
 ];
-const capheDetail = cafes.find(x => x.id == window.location.search.slice(4))
-const cafeDetail = document.querySelector('.main-detail')
-cafeDetail.querySelector('.detail-name').innerText = capheDetail.name
-cafeDetail.querySelector('.detail-price').innerText = capheDetail.price
-cafeDetail.querySelector('img').setAttribute("src", capheDetail.img)
-cafeDetail.querySelector('img').setAttribute("alt", capheDetail.name)
-const cafeDetail1 = document.querySelector('.bottom-detail')
-cafeDetail1.querySelector('.about-content').innerText = capheDetail.about
+const capheDetail = cafes.find((x) => x.id == window.location.search.slice(4));
+const cafeDetail = document.querySelector(".main-detail");
+cafeDetail.querySelector(".detail-name").innerText = capheDetail.name;
+cafeDetail.querySelector(".detail-price").innerText = capheDetail.price;
+cafeDetail.querySelector("img").setAttribute("src", capheDetail.img);
+cafeDetail.querySelector("img").setAttribute("alt", capheDetail.name);
+const cafeDetail1 = document.querySelector(".bottom-detail");
+cafeDetail1.querySelector(".about-content").innerText = capheDetail.about;
 
-
-// let cafe = [
-//    { 
+//    {
 //     id: 1,
 //     name: "cafe 01",
 //     price: "31.000",
 //     img: "https://product.hstatic.net/1000075078/product/1684482557_bg-product-1_e9409318c09d4ad4935d1554be363429_large.jpg"
 // },
-//   { 
+//   {
 //     id: 2,
 //     name: "cafe 02",
 //       price: "32.000",
 //     img: ""
 // },
-// { 
+// {
 //     id: 3,
 //     name: "cafe 03",
 //       price: "33.000",
 //     img: ""
 // },
-// { 
+// {
 //     id: 4,
 //     name: "cafe 04",
 //       price: "34.000",
 //     img: ""
 // },
-// { 
+// {
 //     id: 5,
 //     name: "cafe 05",
 //       price: "35.000",
 //     img: ""
 // },
-// { 
+// {
 //     id: 6,
 //     name: "cafe 06",
 //       price: "36.000",
 //     img: ""
 // },
-// { 
+// {
 //     id: 7,
 //     name: "cafe 07",
 //       price: "37.000",
 //     img: ""
 // },
-// { 
+// {
 //     id: 8,
 //     name: "cafe 08",
 //       price: "38.000",
@@ -167,38 +164,26 @@ cafeDetail1.querySelector('.about-content').innerText = capheDetail.about
 // cafeName01.innerText = randomProperty(cafe).name
 
 function getRandom(list) {
-    const res = []
-    for (let x= 1; x<=3; x++) {
-        const random = Math.floor(Math.random()* list.length);
-        res.push(list[random])
-    }
-    return res
+  const res = [];
+  for (let x = 1; x <= 3; x++) {
+    const random = Math.floor(Math.random() * list.length);
+    res.push(list[random]);
+  }
+  return res;
 }
-function getRandomElements(list, item = 6){
-    return [...list].sort(() => Math.random()> 0.5 ? 1 : -1).slice(0,item)
-}
-
-
-const capheArr = getRandomElements(cafes, 6)
-for(var i = 0; i <= 5; i++) {
-  var capherandom = document.getElementById("cafe0"+(i+1))
-  console.log('document.querySelector(`#cafe0${(i+1)} img`)', document.querySelector(`#cafe0${(i+1)} img`));
-  // document.querySelector(`#cafe0${(i+1)} img`).setAttribute('msp', capheArr[i].img)
-  capherandom.querySelector('.card-name').innerText = capheArr[i].name;
-  capherandom.querySelector('.card-price').innerText = capheArr[i].price;
-  capherandom.querySelector('img').setAttribute("src", capheArr[i].img);
-  capherandom.querySelector('img').setAttribute("alt", capheArr[i].name);
-  
+function getRandomElements(list, item = 6) {
+  return [...list].sort(() => (Math.random() > 0.5 ? 1 : -1)).slice(0, item);
 }
 
-// console.log(getRandomElements(cafe, 6))
-// var cafeName01 = document.getElementById("cafe01")
-// cafeName01.innerText = getRandomElements(cafe,6)[0].name
-// var cafeName02 = document.getElementById("cafe02")
-// cafeName02.innerText = getRandomElements(cafe,6)[1].name
-// var cafeName03 = document.getElementById("cafe03")
-// cafeName03.innerText = getRandomElements(cafe,6)[2].name
-// var cafeName04 = document.getElementById("cafe04")
-// cafeName04.innerText = getRandomElements(cafe,6)[3].name
-// var cafeName05 = document.getElementById("cafe05")
-// cafeName05.innerText = getRandomElements(cafe,6)[4].name
+const capheArr = getRandomElements(cafes, 6);
+const listElDetail = document.querySelectorAll(".card-detail");
+for (var i = 0; i <= 5; i++) {
+  var capherandom = listElDetail[i];
+  capherandom.querySelector(".card-name").innerText = capheArr[i].name;
+  capherandom.querySelector(".card-price").innerText = capheArr[i].price;
+  capherandom.querySelector("img").setAttribute("src", capheArr[i].img);
+  capherandom.querySelector("img").setAttribute("id", capheArr[i].id);
+}
+function goDetail(event) {
+  window.location = `./cafeDetail01.html?id=${event.id}`;
+}

@@ -2,16 +2,16 @@
 let dropdown = document.getElementsByClassName("dropdown-btn");
 let i;
 
-for (i=0; i < dropdown.length; i++){
-    dropdown[i].addEventListener("click", function(){
-        this.classList.toggle("active");
-        let dropdownContent = this.nextElementSibling;
-        if (dropdownContent.style.display ==="block"){
-            dropdownContent.style.display = "none";
-        } else{
-            dropdownContent.style.display = "block";
-        }
-    });
+for (i = 0; i < dropdown.length; i++) {
+  dropdown[i].addEventListener("click", function () {
+    this.classList.toggle("active");
+    let dropdownContent = this.nextElementSibling;
+    if (dropdownContent.style.display === "block") {
+      dropdownContent.style.display = "none";
+    } else {
+      dropdownContent.style.display = "block";
+    }
+  });
 }
 
 function goDetail(event) {
@@ -19,7 +19,7 @@ function goDetail(event) {
 }
 
 let allproducts = [
-{
+  {
     id: "allproduct01",
     name: "Phin Sữa Tươi Bánh Flan",
     price: "49.000 đ",
@@ -91,7 +91,7 @@ let allproducts = [
     about:
       "Vẫn là hương vị cà phê sữa đậm đà quen thuộc của The Coffee House nhưng khoác lên mình một chiếc áo mới tiện lợi hơn, tiết kiệm hơn phù hợp với bình thường mới, giúp bạn tận hưởng một ngày dài trọn vẹn. *Sản phẩm dùng ngon nhất trong ngày. *Sản phẩm mặc định mức đường và không đá.",
   },
- {
+  {
     id: "allproduct09",
     name: "Trà Long Nhãn Hạt Sen",
     price: "49.000 đ",
@@ -144,7 +144,7 @@ let allproducts = [
     img: "https://product.hstatic.net/1000075078/product/bottle_oolong_285082_a5c6a23d73924b96b86d5e1e52e87aa0_large.jpg",
     about:
       "Phiên bản chai fresh 500ml mới, The Coffee House tin rằng với diện mạo mới: tiện lợi và phù hợp với bình thường mới này, các tín đồ trà sữa sẽ được thưởng thức hương vị đậm đà, hòa quyện với sữa thơm béo mang đến cảm giác mát lạnh ở bất cứ nơi đâu. *Sản phẩm dùng ngon nhất trong ngày. *Sản phẩm mặc định mức đường và không đá.",
-  }, 
+  },
   {
     id: "allproduct15",
     name: "CloudTea Oolong Nướng Kem Dừa",
@@ -351,7 +351,7 @@ let allproducts = [
     about:
       "Thịt gà được xé tơi, mang hương vị mặn, ngọt, cay cay quyện nhau vừa chuẩn, thêm chút thơm thơm thơm từ lá chanh sấy khô giòn giòn xua tan ngay cơn buồn miệng.",
   },
-]
+];
 const allproduct = document.querySelectorAll(".products");
 allproduct.forEach((x, i) => {
   x.querySelector("img").setAttribute("src", allproducts[i].img);
@@ -361,100 +361,45 @@ allproduct.forEach((x, i) => {
   x.querySelector(".price").innerHTML = allproducts[i].price;
 });
 
-const allproductsDetail = allproducts.find(x => x.id == window.location.search.slice(4))
-const allproductDetail = document.querySelector('.main-detail')
-allproductDetail.querySelector('.detail-name').innerText = allproductsDetail.name
-allproductDetail.querySelector('.detail-price').innerText = allproductsDetail.price
-allproductDetail.querySelector('img').setAttribute("src", allproductsDetail.img)
-allproductDetail.querySelector('img').setAttribute("alt", allproductsDetail.name)
-const allproductDetail1 = document.querySelector('.bottom-detail')
-allproductDetail1.querySelector('.about-content').innerText = allproductsDetail.about
+const allproductsDetail = allproducts.find(
+  (x) => x.id == window.location.search.slice(4)
+);
+const allproductDetail = document.querySelector(".main-detail");
+allproductDetail.querySelector(".detail-name").innerText =
+  allproductsDetail.name;
+allproductDetail.querySelector(".detail-price").innerText =
+  allproductsDetail.price;
+allproductDetail
+  .querySelector("img")
+  .setAttribute("src", allproductsDetail.img);
+allproductDetail
+  .querySelector("img")
+  .setAttribute("alt", allproductsDetail.name);
+const allproductDetail1 = document.querySelector(".bottom-detail");
+allproductDetail1.querySelector(".about-content").innerText =
+  allproductsDetail.about;
 
 function getRandom(list) {
-    const res = []
-    for (let x= 1; x<=3; x++) {
-        const random = Math.floor(Math.random()* list.length);
-        res.push(list[random])
-    }
-    return res
+  const res = [];
+  for (let x = 1; x <= 3; x++) {
+    const random = Math.floor(Math.random() * list.length);
+    res.push(list[random]);
+  }
+  return res;
 }
-function getRandomElements(list, item = 6){
-    return [...list].sort(() => Math.random()> 0.5 ? 1 : -1).slice(0,item)
+function getRandomElements(list, item = 6) {
+  return [...list].sort(() => (Math.random() > 0.5 ? 1 : -1)).slice(0, item);
 }
 
 const allproductArr = getRandomElements(allproducts, 6);
-for (var id= 0; i <= 5; i++) {
-  var allproductrandom = document.getElementById("allproduct0" + (i + 1));
-  console.log(
-    "document.querySelector(`#allproduct0${(i+1)} img`)",
-    document.querySelector(`#allproduct0${i + 1} img`)
-  );
-  allproductrandom.querySelector(".card-name").innerText =
-    allproductArr[i].name;
-  allproductrandom.querySelector(".card-price").innerText =
-    allproductArr[i].price;
-  allproductrandom
-    .querySelector("img")
-    .setAttribute("src", allproductArr[i].img);
-  allproductrandom
-    .querySelector("img")
-    .setAttribute("alt", allproductArr[i].name);
+const listElDetail = document.querySelectorAll(".card-detail");
+for (var id = 0; i <= 5; i++) {
+  var productrandom = listElDetail[i];
+  productrandom.querySelector(".card-name").innerText = allproductArr[i].name;
+  productrandom.querySelector(".card-price").innerText = allproductArr[i].price;
+  productrandom.querySelector("img").setAttribute("src", allproductArr[i].img);
+  productrandom.querySelector("img").setAttribute("id", allproductArr[i].id);
 }
-// let teadrinks = [
-//   {
-//     id: "allproduct09",
-//     name: "Trà Long Nhãn Hạt Sen",
-//     price: "49.000 đ",
-//     img: "https://product.hstatic.net/1000075078/product/1649378747_tra-sen-nhan_01472713cfef4b8fb7fb4a90efeadd39_large.jpg",
-//     about:
-//       "Thức uống mang hương vị của nhãn, của sen, của trà Oolong đầy thanh mát cho tất cả các thành viên trong dịp Tết này. An lành, thư thái và đậm đà chính là những gì The Coffee House mong muốn gửi trao đến bạn và gia đình.",
-//   },
-//   {
-//     id: "allproduct10",
-//     name: "Trà Đào Cam Sả - Đá",
-//     price: "49.000 đ",
-//     img: "https://product.hstatic.net/1000075078/product/1669736819_tra-dao-cam-sa-da_c0a2708af2a249f6a8df029a3faef564_large.png",
-//     about:
-//       "Vị thanh ngọt của đào, vị chua dịu của Cam Vàng nguyên vỏ, vị chát của trà đen tươi được ủ mới mỗi 4 tiếng, cùng hương thơm nồng đặc trưng của sả chính là điểm sáng làm nên sức hấp dẫn của thức uống này.",
-//   },
-//   {
-//     id: "allproduct11",
-//     name: "Trà Đào Cam Sả Chai Fresh 500ML",
-//     price: "105.000 đ",
-//     img: "https://product.hstatic.net/1000075078/product/bottle_tradao_836487_73425d2bcd244d88918412052e15022e_large.jpg",
-//     about:
-//       "Với phiên bản chai fresh 500ml, thức uống best seller đỉnh cao mang một diện mạo tươi mới, tiện lợi, phù hợp với bình thường mới và vẫn giữ nguyên vị thanh ngọt của đào, vị chua dịu của cam vàng nguyên vỏ và vị trà đen thơm lừng ly Trà đào cam sả nguyên bản. *Sản phẩm dùng ngon nhất trong ngày. *Sản phẩm mặc định mức đường và không đá.",
-//   },
-//   {
-//     id: "allproduct12",
-//     name: "Hồng Trà Sữa Trân Châu",
-//     price: "55.000 đ",
-//     img: "https://product.hstatic.net/1000075078/product/hong-tra-sua-tran-chau_326977_9fa9895e23bc46818ec7800cfd35b060_large.jpg",
-//     about:
-//       "Thêm chút ngọt ngào cho ngày mới với hồng trà nguyên lá, sữa thơm ngậy được cân chỉnh với tỉ lệ hoàn hảo, cùng trân châu trắng dai giòn có sẵn để bạn tận hưởng từng ngụm trà sữa ngọt ngào thơm ngậy thiệt đã.",
-//   },
-//   {
-//     id: "allproduct13",
-//     name: "Trà sữa Oolong Nướng Trân Châu",
-//     price: "55.000 đ",
-//     img: "https://product.hstatic.net/1000075078/product/1669736877_tra-sua-oolong-nuong-tran-chau_ee56caa33ce3432e99571c302f0d6498_large.png",
-//     about:
-//       "Hương vị chân ái đúng gu đậm đà với trà oolong được “sao” (nướng) lâu hơn cho hương vị đậm đà, hòa quyện với sữa thơm béo mang đến cảm giác mát lạnh, lưu luyến vị trà sữa đậm đà nơi vòm họng.",
-//   },
-//   {
-//     id: "allproduct14",
-//     name: "Trà Sữa Oolong Nướng Trân Châu Chai Fresh 500ML",
-//     price: "95.000 đ",
-//     img: "https://product.hstatic.net/1000075078/product/bottle_oolong_285082_a5c6a23d73924b96b86d5e1e52e87aa0_large.jpg",
-//     about:
-//       "Phiên bản chai fresh 500ml mới, The Coffee House tin rằng với diện mạo mới: tiện lợi và phù hợp với bình thường mới này, các tín đồ trà sữa sẽ được thưởng thức hương vị đậm đà, hòa quyện với sữa thơm béo mang đến cảm giác mát lạnh ở bất cứ nơi đâu. *Sản phẩm dùng ngon nhất trong ngày. *Sản phẩm mặc định mức đường và không đá.",
-//   }, 
-// ]
-// const teadrink = document.querySelectorAll(".tea");
-// teadrink.forEach((x, i) => {
-//   x.querySelector("img").setAttribute("src", teadrinks[i].img);
-//   x.querySelector("img").setAttribute("alt", teadrinks[i].name);
-//   x.querySelector("img").setAttribute("id", teadrinks[i].id);
-//   x.querySelector(".item_name").innerHTML = teadrinks[i].name;
-//   x.querySelector(".price_product_item").innerHTML = teadrinks[i].price;
-// });
+function goDetailProduct(event) {
+  window.location = `./allproductDetail01.html?id=${event.id}`;
+}

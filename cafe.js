@@ -1,13 +1,6 @@
-// $(document).ready(function(){
-//     $(".go-detail").click(function(){
-//         window.location.href("./cafeDetail/cafeDetail01.html")
-//     })
-// })
-
 function goDetail(event) {
   window.location = `./cafeDetail/cafeDetail01.html?id=${event.id}`;
 }
-
 
 let cafes = [
   {
@@ -118,7 +111,6 @@ let cafes = [
     about:
       "Với thiết kế lon cao trẻ trung, hiện đại và tiện lợi, Cà phê sữa đá lon thơm ngon đậm vị của The Coffee House sẽ đồng hành cùng nhịp sống sôi nổi của tuổi trẻ và giúp bạn có được một ngày làm việc đầy hứng khởi.",
   },
-  
 ];
 
 const product = document.querySelectorAll(".products");
