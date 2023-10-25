@@ -83,34 +83,36 @@ tratuilocproduct.forEach((x, i) => {
   x.querySelector(".price").innerText = teas[i].price;
 });
 
-const traDetail = teas.find(x => x.id == window.location.search.slice(4))
-const teaDetail = document.querySelector('.main-detail')
-teaDetail.querySelector('.detail-name').innerText = traDetail.name
-teaDetail.querySelector('.detail-price').innerText = traDetail.price
-teaDetail.querySelector('img').setAttribute("src", traDetail.img)
-teaDetail.querySelector('img').setAttribute("alt", traDetail.name)
-const teaDetail1 = document.querySelector('.bottom-detail')
-teaDetail1.querySelector('.about-content').innerText = traDetail.about
+const traDetail = teas.find((x) => x.id == window.location.search.slice(4));
+const teaDetail = document.querySelector(".main-detail");
+teaDetail.querySelector(".detail-name").innerText = traDetail.name;
+teaDetail.querySelector(".detail-price").innerText = traDetail.price;
+teaDetail.querySelector("img").setAttribute("src", traDetail.img);
+teaDetail.querySelector("img").setAttribute("alt", traDetail.name);
+const teaDetail1 = document.querySelector(".bottom-detail");
+teaDetail1.querySelector(".about-content").innerText = traDetail.about;
 
 function getRandom(list) {
-    const res = []
-    for (let x= 1; x<=3; x++) {
-        const random = Math.floor(Math.random()* list.length);
-        res.push(list[random])
-    }
-    return res
+  const res = [];
+  for (let x = 1; x <= 3; x++) {
+    const random = Math.floor(Math.random() * list.length);
+    res.push(list[random]);
+  }
+  return res;
 }
-function getRandomElements(list, item = 6){
-    return [...list].sort(() => Math.random()> 0.5 ? 1 : -1).slice(0,item)
+function getRandomElements(list, item = 6) {
+  return [...list].sort(() => (Math.random() > 0.5 ? 1 : -1)).slice(0, item);
 }
-const traArr = getRandomElements(teas, 6)
-for(var i = 0; i <= 5; i++) {
-  var trarandom = document.getElementById("tea0"+(i+1))
-  console.log('document.querySelector(`#tea0${(i+1)} img`)', document.querySelector(`#tea0${(i+1)} img`));
-  // document.querySelector(`#cafe0${(i+1)} img`).setAttribute('msp', traArr[i].img)
-  trarandom.querySelector('.card-name').innerText = traArr[i].name;
-  trarandom.querySelector('.card-price').innerText = traArr[i].price;
-  trarandom.querySelector('img').setAttribute("src", traArr[i].img);
-  trarandom.querySelector('img').setAttribute("alt", traArr[i].name);
-  
+const traArr = getRandomElements(teas, 6);
+var trarandom = document.querySelectorAll(".card-detail");
+for (var i = 0; i <= 5; i++) {
+  var tearandom = trarandom[i];
+
+  tearandom.querySelector(".card-name").innerText = traArr[i].name;
+  tearandom.querySelector(".card-price").innerText = traArr[i].price;
+  tearandom.querySelector("img").setAttribute("src", traArr[i].img);
+  tearandom.querySelector("img").setAttribute("id", traArr[i].id);
+}
+function goDetailTea(event) {
+  window.location = `./teaDetail01.html?id=${event.id}`;
 }

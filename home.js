@@ -141,6 +141,6 @@ homeproduct.forEach((x, i) => {
   x.querySelector(".price_product_item").innerHTML = homeproducts[i].price;
 });
 
-function goDetail(event){
-     window.location= `./cafeDetail/allproductDetail01.html?id=${event.id}`;
+function goDetail(event) {
+  window.location = `./cafeDetail/allproductDetail01.html?id=${event.id}`;
 }
