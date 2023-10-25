@@ -135,3 +135,6 @@ a {
   border: none;
   vertical-align: middle;
 }
+.item_name:hover{
+  color: var(--text-orange);
+}
